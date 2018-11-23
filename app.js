@@ -12,7 +12,9 @@ var app = express();
 //Nunjucks setup
 nunjucks.configure('views', {
 	autoescape: true,
-	express: app
+	express: app,
+	watch: true,
+    noCache: true
 });
 app.set('view engine', 'nunjucks');
 
